@@ -11,6 +11,7 @@
     <mvc:annotation-driven />
     
     <mvc:resources mapping="/pages/**" location="/WEB-INF/pages/" />
+    <mvc:resources mapping="/angularJsController/**" location="/WEB-INF/controller/" />
     <mvc:annotation-driven/>
 
 </beans>
