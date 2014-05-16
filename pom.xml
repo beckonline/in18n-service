@@ -31,7 +31,8 @@
 
 		<!-- Test -->
 		<junit.version>4.11</junit.version>
-
+		
+		<jackson.databind-version>2.3.3</jackson.databind-version>
 	</properties>
 
 	<dependencies>
@@ -168,11 +169,12 @@
 			<version>1.0.0.RELEASE</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.2.4</version>
-		</dependency>
+		 <!-- Jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.databind-version}</version>
+        </dependency>
 
 	</dependencies>
 	

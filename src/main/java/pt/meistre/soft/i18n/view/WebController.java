@@ -10,7 +10,7 @@ public class WebController {
    @RequestMapping(value = "/", method = RequestMethod.GET)
    public String home() {
      
-      return "redirect:/pages/home.htm";
+      return "redirect:app/home.htm";
    }
    
 }
