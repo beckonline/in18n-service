@@ -29,7 +29,7 @@
 
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="packagesToScan" value="pt.meistre.soft.i18n.model" />
+		<property name="packagesToScan" value="pt.meistre.soft.i18n.model,pt.meistre.soft.i18n.service" />
 		<property name="jpaVendorAdapter">
 			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
 				<property name="showSql" value="${hibernate.show_sql}" />
